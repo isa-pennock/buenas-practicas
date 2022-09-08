@@ -1,21 +1,18 @@
 input.onButtonPressed(Button.A, function () {
-    sumar = A + 1
-    basic.showNumber(sumar)
+    basic.showNumber(número)
+    número += 1
 })
 input.onButtonPressed(Button.AB, function () {
-    texto += 1
+    texto = "Otro"
 })
 input.onButtonPressed(Button.B, function () {
-    restar = B - 1
-    basic.showNumber(restar)
+    número += -1
+    basic.showNumber(número)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
-    basic.showString("hola")
+    basic.showString(texto)
 })
-let restar = 0
-let sumar = 0
-let B = 0
-let A = 0
-A = randint(1, 5)
-B = randint(1, 10)
-let texto: number = "hola"
+let texto = ""
+let número = 0
+número = 0
+texto = "Uno"
